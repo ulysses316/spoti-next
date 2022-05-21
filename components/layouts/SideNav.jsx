@@ -1,4 +1,4 @@
-import styles from '../../styles/components/common/sidenav.module.scss'
+import styles from '../../styles/components/landings/sidenav.module.scss'
 import Link from 'next/link';
 import Image from 'next/image';
 // Icons

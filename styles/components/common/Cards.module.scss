@@ -1,0 +1,37 @@
+@import "../../globals.scss";
+
+.rectangularCard {
+    padding: 2em;
+    padding-top: 60px;
+
+    & h1 {
+        color: white;
+        font-family: $text-regular;
+        font-weight: 900;
+    }
+
+    & div:nth-child(2) {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(520px, 1fr));
+        gap: 1em;
+
+        .recently-items {
+            background-color: #595b5d49;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            position: relative;
+
+            & p {
+                font-family: $text-black;
+                padding: 1em;
+            }
+
+            .play-widget {
+                color: #1fdf64;
+                font-size: 3em;
+                display: none;
+            }
+        }
+    }
+}
