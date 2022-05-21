@@ -1,0 +1,104 @@
+@import "../../globals.scss";
+
+.skeleton {
+    position: absolute;
+    left: 241px;
+    width: $width-content;
+    background: linear-gradient(0deg, #121212 0%, #2b2944 100%);
+    min-height: 300vh;
+    height: 100%;
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        background-color: transparent;
+        position: fixed;
+        width: $width-content;
+
+        & .navProfile {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1em;
+            width: 100%;
+
+            & .returnForward {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                gap: 1.8em;
+
+                & .prevContainer {
+                    border-radius: 50%;
+                    background-color: rgba(0, 0, 0, 0.368);
+                    aspect-ratio: 1/1;
+
+                    & svg {
+                        font-size: 2em;
+                        color: white;
+                    }
+                }
+            }
+
+            & .profileSettingsSection {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: rgba(0, 0, 0, 0.301);
+                border-radius: 20px;
+                cursor: pointer;
+
+                & img {
+                    height: 28px;
+                    aspect-ratio: 1 / 1;
+                    border-radius: 50%;
+                    margin: 0 0.5em;
+                }
+
+                & p {
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 1;
+                    overflow: hidden;
+                    width: 150px;
+                    font-size: 0.8em;
+                    font-family: $text-regular;
+                    font-weight: 900;
+                    color: white;
+                }
+
+                & svg {
+                    color: white;
+                    padding: 0.5em;
+                }
+            }
+            .dropProfileMenu {
+                width: 196px;
+                background-color: $light-black;
+                position: absolute;
+                right: 23px;
+                top: 60px;    
+                display: none;            
+
+                & ul {
+                    padding: 0;
+                    & li {
+                        padding: .5em 1em;
+                        list-style: none;
+                        & a,
+                        a:hover {
+                            color: white;
+                            font-family: $text-regular;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .children{
+        width: $width-content;
+        margin-top: $height-content;
+        padding: 1em;
+    }
+}

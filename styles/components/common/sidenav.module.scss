@@ -1,0 +1,88 @@
+@import '../../globals.scss';
+
+.side-nav {
+    position: absolute;
+    left: 0;
+    width: 241px;    
+
+    p,
+    a {
+        color: #fff;
+    }
+
+    a {
+        text-decoration: none;
+        &:visited {
+            color: #fff;
+        }
+    }
+    p{
+        cursor: pointer;
+        & span {
+            color: #fff;
+            margin: 0 0.2em;
+            margin-right: 0.5em;
+    
+            & svg{
+                font-size: 1.5em;                
+            }
+        }
+    }
+
+    hr {
+        border: solid 0.1px rgba(128, 128, 128, 0.418);
+        border-bottom: 0;
+        margin: 1em 0;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 235px 1fr;
+    }
+
+    nav {
+        background-color: #000000;
+        height: 100vh;
+        max-width: 241px;
+        position: fixed;
+        padding: 1em;
+        box-sizing: border-box;
+        width: 100%;
+
+        div:nth-child(1) {
+            padding: .7em 1em 1em .7em;
+        }
+
+        div img {
+            width: 100%;
+        }
+
+        div:nth-child(2) {
+            p {
+                font-size: 14px;
+                font-family: $text-black;
+            }
+        }
+
+        div:nth-child(4) {
+            p {
+                font-size: 12px;
+                font-family: $text-regular;
+            }
+        }
+    }
+
+    .create-playlist {
+        background-color: #ffffff;
+        color: #000000;
+        margin: 0 0.5em 0 0;
+        padding: .2em;
+    }
+
+    .your-likes {
+        background: rgb(51, 71, 175);
+        background: radial-gradient(circle, rgba(51, 71, 175, 1) 0%, rgba(0, 212, 255, 1) 100%);                
+        margin: 0 0.5em 0 0;
+        padding: .2em;
+    }
+}
