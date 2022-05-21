@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import MainApp from '../components/layouts/MainApp'
 import RectangularCard from '../components/common/RectangularCard'
+import SquareCard from '../components/common/SquareCard'
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       </Head>
       <MainApp>
         {/* <RectangularCard/> */}
+        <SquareCard/>     
       </MainApp>
     </>
   )

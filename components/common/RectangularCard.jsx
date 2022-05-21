@@ -1,15 +1,25 @@
 import styles from '../../styles/components/common/Cards.module.scss'
-import AiFillPlayCircle from 'react-icons/ai'
+import { AiFillPlayCircle } from 'react-icons/ai'
+import Link from 'next/link'
 
-// className={styles[""]}
-export default function SquareCard() {
+export default function RectangularCard() {
   return (
     <div className={styles["rectangularCard"]}>
-      <div className={styles["caratula-recently"]}></div>
+      <h1>Buenas noches</h1>
       <div>
-        <p>Descubrimiento semanal</p>
+        <Link href="#">
+          <a>
+            <div className={`${styles["recently-items"]}`}>
+              <div className={styles["caratula-recently"]} />
+              <div>
+                <p>Descubrimiento semanal</p>
+              </div>
+              <span className={styles["play-widget"]}><AiFillPlayCircle /></span>
+            </div>
+          </a>
+        </Link>
       </div>
-      <span class={styles["play-widget"]}><AiFillPlayCircle/></span>
     </div>
+
   )
 }

@@ -1,13 +1,15 @@
 @import "../../globals.scss";
 
 .rectangularCard {
-    padding: 2em;
-    padding-top: 60px;
-
     & h1 {
         color: white;
         font-family: $text-regular;
         font-weight: 900;
+    }
+
+    & a {
+        color: white;
+        text-decoration: none;
     }
 
     & div:nth-child(2) {
@@ -28,10 +30,91 @@
             }
 
             .play-widget {
-                color: #1fdf64;
+                color: $spotify-color;
+                font-size: 3em;
+                display: none;
+                position: absolute;
+                right: 0.5em;
+                height: 100%;
+            }
+        }
+    }
+}
+
+.caratula-recently {
+    background-image: url("/264x264.jpg");
+    height: 80px;
+    aspect-ratio: 1 / 1;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.recently-items:hover .play-widget {
+    display: flex !important;
+    align-items: center;
+}
+
+.squareCard {
+    cursor: pointer;
+    width: 150px;
+    & a {
+        color: white;
+        text-decoration: none;        
+    }
+
+    .square-card-body {
+        background-color: #595b5d49;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        max-width: 150px;
+        width: 100%;
+        padding: 1em;
+
+        & .image-container{
+            width: 100%;
+            position: relative;
+
+            & .play-widget-square{
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                color: $spotify-color;
                 font-size: 3em;
                 display: none;
             }
         }
+
+        & p:nth-child(2) {
+            font-family: $text-regular;
+            font-weight: 600;
+            color: white;
+            font-size: 15px;
+
+            // Ocultar texto de mas de un parrafo
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 1;
+            overflow: hidden;
+        }
+
+        & p:nth-child(3) {
+            font-family: $text-regular;            
+            color: gray;            
+            font-size: 13px;
+            margin: 0;
+
+            // Ocultar texto de mas de un parrafo
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+            overflow: hidden;
+        }
     }
+}
+
+.squareCard:hover .play-widget-square{
+    display: inline !important;
 }
