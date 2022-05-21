@@ -1,6 +1,6 @@
 @import "../../globals.scss";
 
-.rectangularCard {    
+.rectangularCard {
     & a {
         color: white;
         text-decoration: none;
@@ -48,7 +48,6 @@
     align-items: center;
 }
 
-
 // SQUARE
 
 .squareCard {
@@ -56,7 +55,7 @@
     width: 150px;
     & a {
         color: white;
-        text-decoration: none;        
+        text-decoration: none;
     }
 
     .square-card-body {
@@ -69,11 +68,11 @@
         width: 100%;
         padding: 1em;
 
-        & .image-container{
+        & .image-container {
             width: 100%;
             position: relative;
 
-            & .play-widget-square{
+            & .play-widget-square {
                 position: absolute;
                 right: 0;
                 bottom: 0;
@@ -97,8 +96,8 @@
         }
 
         & p:nth-child(3) {
-            font-family: $text-regular;            
-            color: gray;            
+            font-family: $text-regular;
+            color: gray;
             font-size: 13px;
             margin: 0;
 
@@ -111,6 +110,35 @@
     }
 }
 
-.squareCard:hover .play-widget-square{
+.squareCard:hover .play-widget-square {
     display: inline !important;
+}
+
+.card-frame {
+    background-color: #595b5d49;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 1em;
+    width: 217px;
+    aspect-ratio: 1/1;
+    position: relative;
+    z-index: 3;
+
+    & h3 {
+        color: white;
+        font-size: 2em;
+    }
+
+    & .rotate-image {                
+        position: absolute;
+        z-index: 1;
+        & img {
+            width: 120px;
+            aspect-ratio: 1 / 1;
+            position: absolute;
+            right: -135px;            
+            transform: rotate(25deg);
+            z-index: 2;
+        }
+    }
 }
