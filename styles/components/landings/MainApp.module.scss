@@ -97,8 +97,14 @@
         }
     }
     .children{
-        width: $width-content;
+        width: calc(100% - 32px);
         margin-top: $height-content;
         padding: 1em;
+
+        & h1, h2 {
+            color: white;
+            font-family: $text-regular;
+            font-weight: 900;
+        }
     }
 }

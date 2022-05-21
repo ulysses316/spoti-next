@@ -2,6 +2,7 @@ import Head from 'next/head'
 import MainApp from '../components/layouts/MainApp'
 import RectangularCard from '../components/common/RectangularCard'
 import SquareCard from '../components/common/SquareCard'
+import styles from '../styles/pages/index.module.scss'
 
 export default function Home() {
   return (
@@ -12,8 +13,34 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <MainApp>
-        {/* <RectangularCard/> */}
-        <SquareCard/>     
+        <h1>Buenas noches</h1>
+        <div className={styles["recently-listen-section"]}>
+          <RectangularCard />
+          <RectangularCard />
+          <RectangularCard />
+          <RectangularCard />
+          <RectangularCard />
+          <RectangularCard />
+          <h2>Episodios para ti</h2>
+        </div>
+        <div className={styles["square-cards-section"]}>
+          <SquareCard />
+          <SquareCard />
+          <SquareCard />
+          <SquareCard />
+          <SquareCard />
+          <SquareCard />
+          <SquareCard />
+          <SquareCard />
+          <SquareCard />
+          <SquareCard />
+          <SquareCard />
+          <SquareCard />
+          <SquareCard />
+          <SquareCard />
+          <SquareCard />
+          <SquareCard />
+        </div>
       </MainApp>
     </>
   )

@@ -5,7 +5,6 @@ import Link from 'next/link'
 export default function RectangularCard() {
   return (
     <div className={styles["rectangularCard"]}>
-      <h1>Buenas noches</h1>
       <div>
         <Link href="#">
           <a>
