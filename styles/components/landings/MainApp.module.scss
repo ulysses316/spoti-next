@@ -71,29 +71,7 @@
                     color: white;
                     padding: 0.5em;
                 }
-            }
-            .dropProfileMenu {
-                width: 196px;
-                background-color: $light-black;
-                position: absolute;
-                right: 23px;
-                top: 60px;    
-                display: none;            
-
-                & ul {
-                    padding: 0;
-                    & li {
-                        padding: .5em 1em;
-                        list-style: none;
-                        & a,
-                        a:hover {
-                            color: white;
-                            font-family: $text-regular;
-                            text-decoration: none;
-                        }
-                    }
-                }
-            }
+            }            
         }
     }
     .children{

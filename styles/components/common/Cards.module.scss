@@ -116,29 +116,26 @@
 
 .card-frame {
     background-color: #595b5d49;
-    border-radius: 5px;
+    border-radius: 8px;
     display: inline-block;
     padding: 1em;
-    width: 217px;
+    width: 180px;
     aspect-ratio: 1/1;
-    position: relative;
-    z-index: 3;
+    overflow: hidden;
+    background-color: red;
+    cursor: pointer;
 
     & h3 {
         color: white;
-        font-size: 2em;
+        font-size: 1.8em;
+        margin: 0;
     }
 
     & .rotate-image {                
-        position: absolute;
-        z-index: 1;
         & img {
-            width: 120px;
-            aspect-ratio: 1 / 1;
-            position: absolute;
-            right: -135px;            
-            transform: rotate(25deg);
-            z-index: 2;
+            width: 100px;
+            aspect-ratio: 1 / 1;                     
+            transform: rotate(25deg) translate(128%,21%);            
         }
     }
 }

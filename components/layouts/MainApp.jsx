@@ -3,6 +3,7 @@ import { MdNavigateBefore, MdNavigateNext, MdKeyboardArrowDown } from 'react-ico
 import Link from 'next/link'
 import SideNav from './SideNav'
 import RectangularCard from '../common/RectangularCard'
+import ModalOptions from '../common/ModalOptions'
 
 export default function MainApp({ children }) {
   return (
@@ -27,13 +28,7 @@ export default function MainApp({ children }) {
                 <span><MdKeyboardArrowDown /></span>
               </div>
             </div>
-            <div className={styles["dropProfileMenu"]}>
-              <ul>
-                <li><Link href="#"><a>Cuenta</a></Link><br /></li>
-                <li><Link href="#"><a>Perffil</a></Link><br /></li>
-                <li><Link href="#"><a>Cerrar sesión</a></Link><br /></li>
-              </ul>
-            </div>
+            <ModalOptions/>
           </div>
         </div>
         <div className={styles["children"]}>
