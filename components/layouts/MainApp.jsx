@@ -33,7 +33,7 @@ export default function MainApp({ children }) {
         </div>
         <div className={styles["children"]}>
           {children}
-        </div>
+        </div>        
       </div>
     </>
   )

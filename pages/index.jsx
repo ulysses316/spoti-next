@@ -4,6 +4,8 @@ import RectangularCard from '../components/common/RectangularCard'
 import SquareCard from '../components/common/SquareCard'
 import GenderCards from '../components/common/GenderCards'
 import styles from '../styles/pages/index.module.scss'
+import AlbumSongs from '../components/layouts/AlbumSongs'
+import Player from '../components/common/Player'
 
 export default function Home() {
   return (
@@ -14,8 +16,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <MainApp>
-        <GenderCards/>
+        <AlbumSongs/>
       </MainApp>
+      <Player/>
     </>
   )
 }

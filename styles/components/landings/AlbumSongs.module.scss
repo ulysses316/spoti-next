@@ -1,0 +1,154 @@
+@import "../../globals.scss";
+
+.headerAlbum {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    @media (min-width: 700px) {
+        grid-template-columns: 232px 10fr;
+    }
+
+    p,
+    a {
+        color: white;
+    }
+
+    & h1 {
+        font-size: 1em;
+        margin: 0;
+
+        @media (min-width: 400px) {
+            font-size: 2em;
+        }
+
+        @media (min-width: 600px) {
+            font-size: 3em;
+        }
+
+        @media (min-width: 900px) {
+            font-size: 4em;
+        }
+
+        @media (min-width: 1000px) {
+            font-size: 5em;
+        }
+    }
+
+    & .image-album {
+        justify-self: center;
+        align-self: center;
+        padding: 1em;
+
+        & span {
+            height: 100%;
+            box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+        }
+    }
+
+    & .info-album {
+        margin: auto initial;
+    }
+}
+
+.table-songs-section {
+    background-color: #0b0b0b;
+    margin: 0 -1em;
+    height: 100%;
+    min-height: 56vh;
+    padding: 1em 1em;
+    p,
+    a {
+        color: white;
+    }
+
+    .table-song-content {
+        width: 100%;
+        z-index: 9999;
+
+        & .toggle-options-album {
+            display: flex;
+            align-items: center;
+            gap: 1em;
+
+            svg {
+                cursor: pointer;
+            }
+
+            :nth-child(1) {
+                font-size: 4em;
+            }
+
+            :nth-child(2):hover {
+                color: white;
+            }
+
+            :nth-child(3):hover {
+                color: white;
+            }
+        }
+    }
+}
+
+.tables {
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+
+    tbody {
+        th,
+        td,
+        p {
+            color: rgba(255, 255, 255, 0.7);
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        :nth-child(1) th{
+            border-bottom: solid 0.1px rgba(128, 128, 128, 0.418);            
+            margin: 1em 0;
+            padding: 1em 0;
+        }
+
+        th,
+        td {
+            padding: 0.5em 0;            
+        }
+
+        p {
+            margin: 2px;
+        }
+
+        .first-column {
+            width: 3%;
+        }
+
+        .second-column {
+            width: 80%;
+            text-align: left;
+
+            & p {
+                text-align: left;
+            }
+
+            & p:nth-child(1) {
+                font-weight: 600;
+            }
+
+            & p:nth-child(2) {
+                font-size: 13px;
+            }
+        }
+
+        .three-column {
+            width: 3%;
+        }
+
+        tr:hover{
+            background-color: rgba(128, 128, 128, 0.414);            
+        }
+    }
+}
+
+.no-weight {
+    font-weight: 400;
+}

@@ -5,6 +5,7 @@
     left: 241px;
     width: $width-content;
     background: linear-gradient(0deg, #121212 0%, #2b2944 100%);
+    // TODO: Borrar el min-height cuando tengamos el contenido
     min-height: 300vh;
     height: 100%;
 
@@ -86,3 +87,4 @@
         }
     }
 }
+
