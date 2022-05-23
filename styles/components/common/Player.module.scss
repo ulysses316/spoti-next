@@ -8,4 +8,23 @@
     top: 91vh;
     position: fixed;
     right: 0;
+    display: grid;
+    grid-template-columns: 3fr 6fr 3fr;
+
+    div{
+        justify-self: center;
+        align-self: center;
+    }
+
+    .player-album-info{
+        color: white;        
+    }
+
+    .player-controls{
+        color: white;
+    }
+
+    .player-options{
+        color: white;
+    }
 }
